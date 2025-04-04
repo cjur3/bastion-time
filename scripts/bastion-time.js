@@ -28,11 +28,8 @@ function areRequirementsForBastionProgressMet(actor) {
             if (facility.system) {
                 const { building, progress } = facility.system;
 
-                if (building && !building.built) {
-
-                    if (progress && progress.max) {
-                        return true;
-                    }
+                if (progress && progress.max) {
+                    return true;
                 }
             }
         }
