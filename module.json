@@ -31,6 +31,6 @@
   ],
   "url": "https://github.com/cjur3/bastion-time",
   "readme": "https://github.com/cjur3/bastion-time#readme",
-  "download": "https://github.com/cjur3/bastion-time/releases/latest/module.zip",
-  "manifest": "https://github.com/cjur3/bastion-time/releases/latest/module.json"
+  "download": "https://github.com/cjur3/bastion-time/releases/download/latest/module.uip",
+  "manifest": "https://github.com/cjur3/bastion-time/releases/download/latest/module.json"
 }
