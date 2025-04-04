@@ -1,0 +1,34 @@
+{
+  "id": "bastion-time",
+  "title": "Bastion Time",
+  "version": "0.0.1",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "relationships": {
+    "requires": [
+      {
+        "id": "dnd5e",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "foundryvtt-simple-calendar",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "friendlyfire",
+      "flags": {}
+    }
+  ],
+  "scripts": [
+    "scripts/bastion-time.js"
+  ],
+  "url": "https://github.com/cjur3/bastion-time",
+  "readme": "https://github.com/cjur3/bastion-time#readme"
+}
