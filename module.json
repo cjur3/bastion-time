@@ -9,11 +9,6 @@
   "relationships": {
     "requires": [
       {
-        "id": "dnd5e",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
         "id": "foundryvtt-simple-calendar",
         "type": "module",
         "compatibility": {}
