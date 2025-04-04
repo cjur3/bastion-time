@@ -2,7 +2,7 @@ function differenceInDays(diff, secondsInDay, currentDaySeconds) {
     const dayChanged = (currentDaySeconds - diff) >= secondsInDay || (currentDaySeconds - diff) < 0;
     const overflow = diff % secondsInDay !== 0;
     const daysDifference = Math.round(diff / secondsInDay);
-    console.log(diff, secondsInDay, currentDaySeconds, diff / secondsInDay, daysDifference);
+
     if (diff > 0) {
         return daysDifference + ((overflow && dayChanged) ? 1 : 0);
     } else {
