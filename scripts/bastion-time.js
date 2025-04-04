@@ -20,7 +20,7 @@ Hooks.on("ready", () => {
         const currentDaySeconds = date.hour * time.minutesInHour * time.secondsInMinute + date.minute * time.secondsInMinute + date.second;
     
         const difference = differenceInDays(diff, secondsInDay, currentDaySeconds);
-        const playerActors = game.actors.filter(i => i.type === "character");
+        const playerActors = game.actors.filter(a => a.type === "character" && a.system && a.system.details && a.system.details.level >= 5);
         playerActors.forEach(actor => {
             game.system.bastion.advanceAllFacilities(actor, { duration: difference })
         });
