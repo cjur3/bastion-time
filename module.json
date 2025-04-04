@@ -30,5 +30,7 @@
     "scripts/bastion-time.js"
   ],
   "url": "https://github.com/cjur3/bastion-time",
-  "readme": "https://github.com/cjur3/bastion-time#readme"
+  "readme": "https://github.com/cjur3/bastion-time#readme",
+  "download": "https://github.com/cjur3/bastion-time/releases/latest/module.zip",
+  "manifest": "https://github.com/cjur3/bastion-time/releases/latest/module.json"
 }
