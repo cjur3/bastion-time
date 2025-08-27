@@ -41,6 +41,7 @@ function areRequirementsForBastionProgressMet(actor) {
 
 Hooks.on("ready", () => {
     console.log("initializing bastion time");
+    const turnDuration = game.settings.get("dnd5e", "bastionConfiguration").duration;
     Hooks.on(SimpleCalendar.Hooks.DateTimeChange, (data) => {
         const { date, diff } = data;
         const { time } = SimpleCalendar.api.getCurrentCalendar();
@@ -49,8 +50,10 @@ Hooks.on("ready", () => {
 
         const difference = differenceInDays(diff, secondsInDay, currentDaySeconds);
         const playerActors = game.actors.filter(areRequirementsForBastionProgressMet);
-        playerActors.forEach(actor => {
-            game.system.bastion.advanceAllFacilities(actor, { duration: difference })
-        });
+        if(difference >= turnDuration || difference <= -turnDuration) { 
+            playerActors.forEach(actor => {
+                game.system.bastion.advanceAllFacilities(actor, { duration: difference })
+            });
+        }
     });
 })

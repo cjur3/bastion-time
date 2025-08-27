@@ -1,10 +1,10 @@
 {
   "id": "bastion-time",
   "title": "Bastion Time",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "compatibility": {
     "minimum": "12",
-    "verified": "12"
+    "verified": "13"
   },
   "relationships": {
     "requires": [
